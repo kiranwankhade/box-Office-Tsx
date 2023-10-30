@@ -17,7 +17,7 @@ const Favorites = () => {
         </div>
         <h4 className="title">Favorites</h4>
         {!movies.length && (
-          <h3 style={{ marginTop: "70px" }}>Please add your favorite movies</h3>
+          <h3 style={{ marginTop: "70px", textAlign:'center' }}>Please add your favorite movies</h3>
         )}
         <div className="row">
           {movies?.map(({ id, poster_path, original_title }: MovieCardData) => {
